@@ -24,7 +24,7 @@ int main()
                 }
             }
         }
-    } while (codigo != 4);
+    } while (codigo >4 || codigo<4);
     printf("MUITO OBRIGADO\n");
     printf("Alcool: %d\n", alcool);
     printf("Gasolina: %d\n", gasolina);

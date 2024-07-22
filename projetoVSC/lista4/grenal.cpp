@@ -24,8 +24,13 @@ int main(){
             }
             
         }
-        printf("Novo grenal (1-sim 2-nao)\n");
-        scanf("%d", &condicao);
+        do
+        {
+            printf("Novo grenal (1-sim 2-nao)\n");
+            scanf("%d", &condicao);
+        } while (condicao>2 || condicao < 1);
+        
+        
 
         grenal++;
 

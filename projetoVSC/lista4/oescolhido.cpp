@@ -4,12 +4,12 @@ int main(){
     int matricula, numero, i, maiornota;
     float nota, maior;
     // iniciando variaveis
-    i =1;
+    i =0;
     maior = 0.0;
     maiornota = 0;
     scanf("%d\n",&numero);
     // loop para repetir "numero" vezes
-    while (i <= numero)
+    while (numero>i)
     {
         // leitura de variaveis
         scanf("%d %f", &matricula, &nota);

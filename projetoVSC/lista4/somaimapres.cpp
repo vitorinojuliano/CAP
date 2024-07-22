@@ -7,23 +7,24 @@ int main(){
     scanf("%d",&y);
 
     aux = 0;
-
+    // garante que x sera sempre maior 
     if (y>x){
         aux = y;
         y =x; 
         x = aux;
         
     }
+    // se o maior for impar subtrai 2
     if (x%2!=0){
         x-=2;
     }
-
-    if (x%2==0){
+    else{
+        // se o maior for par subtrai 1
         x--;
     }
-    
+    // faz a soma entre os impares
     for (int i = x; i > y;i-=2){
-        aux = aux + i;
+        aux += i;
     }
     printf("%d\n",aux);
 

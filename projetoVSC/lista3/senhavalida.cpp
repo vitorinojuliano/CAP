@@ -13,6 +13,7 @@ int main()
         else{
             printf("Senha Invalida\n");
         }
+    // repete ate que essa consicao seja FALSA
     } while (senha != 2002);
 
 }
