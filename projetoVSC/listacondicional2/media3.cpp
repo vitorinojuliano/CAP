@@ -17,7 +17,7 @@ int main()
         }
         else{
             printf("Aluno em exame.\n");
-            scanf("%f", &exame);
+            scanf("%f", &exame); // posso ler outro dentro de qualquer estrutura
 
             
             printf("Nota do exame: %.1f\n", exame);

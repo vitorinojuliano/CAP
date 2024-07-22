@@ -3,6 +3,7 @@
 int main()
 {
     float valor;
+    // Garante que vai suportar o tamanho da string
     const char* intervalo;
 
     scanf("%f", &valor);
