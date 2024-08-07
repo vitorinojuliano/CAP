@@ -1,22 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    // zerando cada posicao
-    int ipessoa, idade[121]={0};
-    int i;
-    // quantidade de pessoas que eu vou ler
-    for (i=0; i<10; i++){
-        scanf("%d", &ipessoa);
-        // incrementa 1 na posicao.
-        idade[ipessoa]++;
-
-    }
-    // intervalo que ta a idade
-    for (i=0; i<121;i++){
-        if (idade[i]>0){
-            printf("idade %i: %i\n", i, idade[i]);
-
+    int matriz[3][3];
+    int i, j;
+    int somador = 0;
+    for (i=0; i<3; i++){
+        for (j=0; j<3; j++){
+            scanf("%d", &matriz[i][j]);
+            somador+=matriz[i][j];
         }
     }
+    printf("Total = %d\n", somador);
     return 0;
+
 }

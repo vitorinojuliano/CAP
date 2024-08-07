@@ -1,29 +1,26 @@
 #include <stdio.h>
 
-int main()
-{
-    int A, B, C, maior;
+int main(){
+    int i;
 
-    scanf("%d %d %d", &A, &B, &C);
+    struct aluno
+    {
+        int num_alunos;
+        float media;
+        float nota1, nota2, nota3;
+    };
 
-    if (C>B){
-        maior = C;
-        C = B;
-        B = maior;
-    }
-    printf("%d %d %d\n", A,B,C);
-    if (B>A){
-        maior = B;
-        B = A;
-        A = maior;
-    }
-    printf("%d %d %d\n", A,B,C);
-    if (C>B){
-        maior = C;
-        C = B;
-        B = maior;
-    }
-    printf("%d %d %d\n", A,B,C);
+    struct aluno alunos[2];
+        for(i=0; i<2; i++){
+            scanf("%d", &alunos[i].num_alunos);
+            scanf("%f", &alunos[i].nota1);
+            scanf("%f", &alunos[i].nota2);
+            scanf("%f", &alunos[i].nota3);
+            alunos[i].media = (alunos[i].nota1 + alunos[i].nota2 + alunos[i].nota3)/3.0;
+            printf("%.1f\n", alunos[i].media);
+        }
 
+
+    
     return 0;
 }

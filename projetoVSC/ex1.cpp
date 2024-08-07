@@ -1,26 +1,26 @@
 #include <stdio.h>
 
-int main() {
-    int E, F, C;
-    printf("Digite o número de garrafas vazias que Tim já possui (E), garrafas encontradas (F) e garrafas necessárias para comprar um novo refrigerante (C): ");
-    scanf("%d %d %d", &E, &F, &C);
+int main(){
+    int quantIdade = 6;
+    int populacao = 120;
+    int i, idade;
 
-    // Inicialmente, o número total de garrafas vazias é a soma de E e F.
-    int total_vazias = E + F;
-    int total_bebidas = 0;
+    int tamanho[populacao] = {0};
 
-    // Enquanto Tim puder trocar garrafas vazias por refrigerantes novos:
-    while (total_vazias >= C) {
-        // Calcula quantos refrigerantes ele pode obter
-        int novos_refrigerantes = total_vazias / C;
-        
-        // Atualiza o total de refrigerantes bebidos
-        total_bebidas += novos_refrigerantes;
-        // Atualiza o número de garrafas vazias restantes
-        total_vazias = novos_refrigerantes + (total_vazias % C);
+    for (i=0; i<quantIdade; i++){
+        do{
+            scanf("%d", &idade);
+            if (idade<0 || idade>120){
+                printf("Idade invalida\n");
+            }
+        } while(idade<0 || idade>120);
+        tamanho[idade]++;
+
     }
-
-    printf("Tim bebeu %d refrigerantes no dia.\n", total_bebidas);
-
+    for(i=0; i<populacao; i++){
+        if (tamanho[i] != 0){
+            printf(" idade %i repetiu %d\n", i, tamanho[i]);
+        }
+    }
     return 0;
 }
