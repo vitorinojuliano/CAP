@@ -11,7 +11,7 @@ int main(){
         vetor[i] = valor;
         printf("N[%d] = %.4lf\n", i, vetor[i]);
         // Dividindo o valor por 2
-        valor = valor / 2;
+        valor /= 2;
     }
     return 0;
 }

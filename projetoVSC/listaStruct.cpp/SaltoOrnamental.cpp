@@ -22,7 +22,7 @@ int main() {
         fgets(atletas[i].nome, 30, stdin);
         
         // tirar caracter de nova linha
-        atletas[i].nome[strcspn(atletas[i].nome, "\n")] = 0;
+        atletas[i].nome[strcspn(atletas[i].nome, "\n")] = '\0';
 
         scanf("%f", &atletas[i].grauDificuldade);
 

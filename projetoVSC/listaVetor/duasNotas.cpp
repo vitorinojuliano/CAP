@@ -25,7 +25,7 @@ int main(){
             printf("impossible\n");
     // Lendo a compra e o pagamento para continuar o loop
     scanf("%d %d", &compra, &pago);
-    } ;
+    }
 
     return 0;
 
